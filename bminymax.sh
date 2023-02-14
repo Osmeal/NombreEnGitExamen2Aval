@@ -16,7 +16,7 @@ while read -r ciudad mes año consumo; do
         min_mes = "$mes"
         min_año="$año"
     fi
-done < consumos.txt
+done < Consumos.txt
 
 
 echo "Mes con máximo consumo: $max_mes"
