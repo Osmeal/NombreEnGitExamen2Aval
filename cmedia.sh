@@ -4,9 +4,9 @@ if [ $# -eq 0 ]; then
     exit 1
 fi
 
-ciudad=$1
-sum=0
-cont=0
+ciudad = $1
+sum = 0
+cont = 0
 
 while read linea; do
     if [[ $linea == $ciudad* ]]; then
@@ -15,5 +15,5 @@ while read linea; do
     fi
 done < Consumos.txt
 
-promedio = $(echo "scale=2; $sum / $cont" | bc)
+promedio = $(echo "scale = 2; $sum / $cont" | bc)
 echo "La media de consumo en $ciudad es: $promedio"
